@@ -1,0 +1,7 @@
+<section class='section'>
+  <locale-selector />
+  <div class='content'>
+    <vulma-datepicker v-model='birthday' label='Birthday' :locale='$i18n.locale' :i18n="{ today: $t('today') }" />
+    <pre>{{birthday}}</pre>
+  </div>
+</section>

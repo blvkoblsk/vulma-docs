@@ -1,0 +1,25 @@
+<section class='section'>
+  <vulma-select v-model='value1' label='Heroes' :src='heroes' text='profile.name' value='profile.id'></vulma-select>
+  <vulma-select v-model='value2' label='Heroes (with custom template)' :src='heroes' group='brand.name' text='profile.name'
+    value='profile.id' :max-selected='3' :max-text-items='2' selected-text='selected items: {0}' enable-search='true'>
+    <template scope='row'>
+      <div class='card'>
+        <div class='card-content'>
+          <div class='media'>
+            <figure class='media-left'>
+              <div class='image is-48x48'>
+                <img :src='row.data.profile.image' alt=''>
+              </div>
+            </figure>
+            <div class='media-content'>
+              <div class='content'>
+                <p class='title is-4'>{{row.data.profile.name}}</p>
+                <p class='subtitle is-6'>Id: {{row.data.profile.id}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </template>
+  </vulma-select>
+</section>

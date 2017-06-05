@@ -1,0 +1,14 @@
+<div>
+  <vulma-navbar show-menu-button='true' @menu-clicked='$refs.drawer.open()'>
+    <vulma-navitem slot='left' :is-tab='false'>
+      <small>&lArr; Click here</small>
+    </vulma-navitem>
+  </vulma-navbar>
+  <vulma-drawer ref='drawer'>
+    <vulma-drawerheader name='Hulk ' email='hulk@avengers.com ' avatar='/static/hulk.jpg ' color='custom-hulk '></vulma-drawerheader>
+    <vulma-menu>
+      <vulma-menuitem icon='fa-tachometer '>Dashboard</vulma-menuitem>
+      <vulma-menuitem icon='fa-cog '>Settings</vulma-menuitem>
+    </vulma-menu>
+  </vulma-drawer>
+</div>

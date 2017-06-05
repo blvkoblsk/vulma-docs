@@ -1,0 +1,22 @@
+<section class="section">
+  <div class="columns">
+    <div class="column">
+      <strong>Tabs 1</strong>
+      <div>
+        <vulma-button @click='$refs.tabs1.selectTab(1)' size='small'>Select tab Two</vulma-button>
+      </div>
+      <vulma-tabs ref='tabs1'>
+        <vulma-tab title='One'>Tab 1 content</vulma-tab>
+        <vulma-tab title='Two'>Tab 2 content</vulma-tab>
+        <vulma-tab title='Three'>Tab 3 content</vulma-tab>
+      </vulma-tabs>
+    </div>
+    <div class="column">
+      <strong>Tabs 2</strong>
+      <vulma-checkbox v-model='hide'>Hide when just one tab</vulma-checkbox>
+      <vulma-tabs :hide-one-tab='hide'>
+        <vulma-tab title='Just one tab'>This vulma-tabs have just one tab</vulma-tab>
+      </vulma-tabs>
+    </div>
+  </div>
+</section>
