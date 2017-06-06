@@ -116,7 +116,6 @@ export default {
       },
       'vulma-navitem': {
         props: {
-          'active': 'Is active?',
           'is-tab': 'Is a tab?'
         }
       }

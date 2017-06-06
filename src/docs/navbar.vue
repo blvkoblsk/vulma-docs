@@ -28,9 +28,11 @@ export default {
         {
           name: 'vulma-navitem',
           props: [
-            { name: 'active', type: 'Boolean', default: 'false', description: this.$t('docs.navbar.vulma-navitem.props.active') },
             { name: 'is-tab', type: 'Boolean', default: 'true', description: this.$t('docs.navbar.vulma-navitem.props.is-tab') },
-            { name: 'icon', type: 'String', default: '', description: this.$t('icon_class') }
+            { name: 'icon', type: 'String', default: '', description: this.$t('icon_class') },
+            { name: 'route', type: 'String, Object', default: '', description: this.$t('route') },
+            { name: 'href', type: 'String', default: '', description: this.$t('href') },
+            { name: 'open-new-tab', type: 'Boolean', default: 'false', description: this.$t('open_new_tab') }
           ]
         }
       ]
