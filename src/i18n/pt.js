@@ -14,6 +14,7 @@ export default {
   field_label: 'Label do campo.',
   forms: 'Formulários',
   group_property: 'Propriedade usada para agrupar os registros. Ex: "perfil.marca".',
+  guide: 'Guia',
   href: 'Url usada para redirecionar.',
   icon_class: 'Classe do ícone (se estiver usando font-awesome, a classe "fa" não é necessária, use apenas "fa-github").',
   layout: 'Layout',
@@ -29,7 +30,6 @@ export default {
   route: 'Rota usada no vue-router.',
   setup: 'Configuração',
   source_array: 'Vetor fonte: Ex: [{ chave: 1, perfil: { nome: "Hulk" } }, { chave: 2, perfil: { nome: "Thor" } }].',
-  start: 'Início',
   tags: 'Tags',
   text_property: 'Propriedade texto. Ex: "perfil.nome". Se não especificado usará a propriedade valor.',
   title: 'Título',
@@ -38,6 +38,19 @@ export default {
   type: 'Tipo',
   value_property: 'Propriedade valor. Ex: "chave". Se não especificado retornará o objeto inteiro.',
   view_demo_in_new_tab: 'Ver a demo em nova aba',
+  setup_instructions: {
+    prerequisites: 'Pré-requisitos',
+    install_vuecli: 'Instale o vue-cli',
+    create_project: 'Crie o projeto',
+    using_webpack_template: 'Usando o template webpack',
+    add_vulma_to_project: 'Inclua Vulma no projeto',
+    install: 'Instale',
+    change_mainjs: 'Altere src/main.js incluindo essas linhas:',
+    temporary_step: '* esse passo é temporário (somente na versão Alpha)',
+    include_vulma_babel_loader: 'Inclua a pasta vulma no Babel loader (build/webpack.base.conf.js)',
+    test_it: 'Teste...',
+    done: 'Pronto!'
+  },
   docs: {
     button: {
       events: {

@@ -1,12 +1,14 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from '@/components/home/index.vue'
 import docs from '@/docs'
+
+const component = path => () => System.import(`@/components/${path}.vue`)
 
 Vue.use(Router)
 
 let routes = [
-  { path: '/', component: Home }
+  { path: '/', component: component('home/index') },
+  { path: '/setup', component: component('guide/setup') }
 ]
 
 docs.forEach(doc => {

@@ -14,6 +14,7 @@ export default {
   field_label: 'Field label.',
   forms: 'Forms',
   group_property: 'Property used to group rows. Ex: "profile.brand".',
+  guide: 'Guide',
   href: 'Url used to redirect.',
   icon_class: 'Icon class (if using font-awesome, dont need "fa" class, just use "fa-github").',
   layout: 'Layout',
@@ -29,7 +30,6 @@ export default {
   route: 'Route used in vue-router.',
   setup: 'Setup',
   source_array: 'Source array: Ex: [{ key: 1, profile: { name: "Hulk" } }, { key: 2, profile: { name: "Thor" } }].',
-  start: 'Start',
   tags: 'Tags',
   text_property: 'Text property. Ex: "profile.name". If not specified will use value property.',
   title: 'Title',
@@ -38,6 +38,19 @@ export default {
   type: 'Type',
   value_property: 'Value property. Ex: "key". If not specified will return full object.',
   view_demo_in_new_tab: 'View demo in new tab',
+  setup_instructions: {
+    prerequisites: 'Prerequisites',
+    install_vuecli: 'Install vue-cli',
+    create_project: 'Create project',
+    using_webpack_template: 'Using webpack template',
+    add_vulma_to_project: 'Add Vulma to project',
+    install: 'Install',
+    change_mainjs: 'Change src/main.js adding these lines:',
+    temporary_step: '* this is a temporary step (just in Alpha version)',
+    include_vulma_babel_loader: 'Include vulma folder in Babel loader (build/webpack.base.conf.js)',
+    test_it: 'Test it...',
+    done: 'Done!'
+  },
   docs: {
     button: {
       events: {

@@ -2,8 +2,8 @@
   vulma-drawer(ref='drawer')
     vulma-drawerheader(simple='true', title='Vulma Docs')
     vulma-menu
-      .menu-label {{$t('start')}}
-      vulma-menuitem {{$t('setup')}} (todo)
+      .menu-label {{$t('guide')}}
+      vulma-menuitem(route='/setup') {{$t('setup')}}
       .menu-label CSS
       vulma-menuitem {{$t('colors')}} (todo)
       .menu-label {{$t('components')}}
