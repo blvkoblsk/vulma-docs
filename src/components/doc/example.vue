@@ -27,7 +27,7 @@
   .left
     overflow: auto
   .right
-    width: 340px
+    width: 340px !important
     height: 590px
     iframe
       width: 100%
