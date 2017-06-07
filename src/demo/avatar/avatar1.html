@@ -1,0 +1,6 @@
+<section class='section'>
+  <vulma-select label='Size' :src='size.options' v-model='size.value'></vulma-select>
+  <vulma-radio label='Format' :src='format.options' v-model='format.value'></vulma-radio>
+  <vulma-checkbox v-model='animate'>Animate on hover</vulma-checkbox>
+  <vulma-avatar src='/static/hulk.jpg' :size-px='size.value' :format='format.value' :animate='animate'></vulma-avatar>
+</section>

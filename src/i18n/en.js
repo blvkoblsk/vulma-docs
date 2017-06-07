@@ -23,12 +23,14 @@ export default {
   open_new_tab: 'Open specified route in a new tab.',
   parameters: 'Parameters',
   placeholder: 'Placeholder.',
+  possible_values: 'Possible values are:',
   properties: 'Properties',
   read_only: 'Determines if user can change value.',
   return_description: 'Return Description',
   return_type: 'Return Type',
   route: 'Route used in vue-router.',
   setup: 'Setup',
+  source: 'Source',
   source_array: 'Source array: Ex: [{ key: 1, profile: { name: "Hulk" } }, { key: 2, profile: { name: "Thor" } }].',
   tags: 'Tags',
   text_property: 'Text property. Ex: "profile.name". If not specified will use value property.',
@@ -52,6 +54,13 @@ export default {
     done: 'Done!'
   },
   docs: {
+    avatar: {
+      props: {
+        'size-px': 'Size in pixels. @:possible_values 16, 24, 32, 48, 64, 96, 128.',
+        'format': 'Image border format. @:possible_values "circle", "rounded", "square".',
+        'animate': 'Should avatar be animated on hover?'
+      }
+    },
     button: {
       events: {
         'click': {

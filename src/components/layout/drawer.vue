@@ -8,6 +8,7 @@
       vulma-menuitem {{$t('colors')}} (todo)
       .menu-label {{$t('components')}}
       vulma-menugroup(:title="$t('basic')")
+        vulma-menuitem(route='/docs/avatar') Avatar
         vulma-menuitem(route='/docs/button') Button
       vulma-menugroup(:title="$t('layout')")
         vulma-menuitem(route='/docs/drawer') Drawer

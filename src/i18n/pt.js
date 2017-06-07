@@ -23,12 +23,14 @@ export default {
   open_new_tab: 'Abre a rota especificada numa aba nova.',
   parameters: 'Parâmetros',
   placeholder: 'Placeholder.',
+  possible_values: 'Os valores possíveis são:',
   properties: 'Propriedades',
   read_only: 'Determina se o usuário pode editar o valor.',
   return_description: 'Descrição do Retorno',
   return_type: 'Tipo de Retorno',
   route: 'Rota usada no vue-router.',
   setup: 'Configuração',
+  source: 'Fonte',
   source_array: 'Vetor fonte: Ex: [{ chave: 1, perfil: { nome: "Hulk" } }, { chave: 2, perfil: { nome: "Thor" } }].',
   tags: 'Tags',
   text_property: 'Propriedade texto. Ex: "perfil.nome". Se não especificado usará a propriedade valor.',
@@ -52,6 +54,13 @@ export default {
     done: 'Pronto!'
   },
   docs: {
+    avatar: {
+      props: {
+        'size-px': 'Tamanho em pixels. @:possible_values 16, 24, 32, 48, 64, 96, 128.',
+        'format': 'Formato da borda da imagem. @:possible_values "circle", "rounded", "square".',
+        'animate': 'O avatar deve ser animado ao passar o mouse sobre?'
+      }
+    },
     button: {
       events: {
         'click': {

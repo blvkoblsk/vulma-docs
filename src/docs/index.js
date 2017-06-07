@@ -1,4 +1,5 @@
 const docs = [
+  { component: 'avatar', demos: 1 },
   { component: 'button', demos: 1 },
   { component: 'checkbox', demos: 1 },
   { component: 'datepicker', demos: 1 },
