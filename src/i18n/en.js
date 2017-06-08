@@ -71,6 +71,18 @@ export default {
         }
       }
     },
+    collapsible: {
+      'vulma-collapsible': {
+        props: {
+          'expandable': 'Can multiple collapsible-item be opened at same time?'
+        }
+      },
+      'vulma-collapsible-item': {
+        props: {
+          'start-opened': 'Should this collapsible-item be opened by default?'
+        }
+      }
+    },
     datepicker: {
       props: {
         'locale': 'Locale (ISO 639-1) and region (ISO 3166-1) codes. Ex: en, pt, en-US, pt-BR.',
