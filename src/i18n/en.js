@@ -40,6 +40,9 @@ export default {
   type: 'Type',
   value_property: 'Value property. Ex: "key". If not specified will return full object.',
   view_demo_in_new_tab: 'View demo in new tab',
+  home_page: {
+    vue_ui_components: 'Vue UI components based on Bulma'
+  },
   setup_instructions: {
     prerequisites: 'Prerequisites',
     install_vuecli: 'Install vue-cli',

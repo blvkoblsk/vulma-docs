@@ -40,6 +40,9 @@ export default {
   type: 'Tipo',
   value_property: 'Propriedade valor. Ex: "chave". Se não especificado retornará o objeto inteiro.',
   view_demo_in_new_tab: 'Ver a demo em nova aba',
+  home_page: {
+    vue_ui_components: 'Components de UI do Vue baseados no Bulma'
+  },
   setup_instructions: {
     prerequisites: 'Pré-requisitos',
     install_vuecli: 'Instale o vue-cli',
