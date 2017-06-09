@@ -132,6 +132,13 @@ export default {
         }
       }
     },
+    modal: {
+      props: {
+        'is-dialog': 'O modal é um dialog? Isso permite especificar as propriedades icon e title.',
+        'close-on-click-outside': 'O modal deve ser fechado ao clicar fora dele?',
+        'show-close-button': 'Deve-se mostrar o botão de fechar?'
+      }
+    },
     navbar: {
       'example': {
         sidebar_example: 'Para um exemplo do menu lateral veja a ',

@@ -1,0 +1,14 @@
+<section class='section'>
+  <vulma-button @click='$refs.modal.open()'>Open modal</vulma-button>
+  <vulma-modal ref='modal'>
+    <div class="card">
+      <div class="card-content">Modal content</div>
+    </div>
+  </vulma-modal>
+  <vulma-button @click='$refs.dialog.open()'>Open dialog</vulma-button>
+  <vulma-modal ref='dialog' is-dialog='true' icon='fa-superpowers' title='Super heroes' close-on-click-outside='true'>
+    Dialog content
+    <vulma-button slot='footer' color='success' @click='$refs.dialog.close()'>Ok</vulma-button>
+    <vulma-button slot='footer' @click='$refs.dialog.close()'>Cancel</vulma-button>
+  </vulma-modal>
+</section>

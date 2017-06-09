@@ -132,6 +132,13 @@ export default {
         }
       }
     },
+    modal: {
+      props: {
+        'is-dialog': 'Is modal a dialog? This allow to specify icon and title properties.',
+        'close-on-click-outside': 'Should close modal on click outside it?',
+        'show-close-button': 'Should show close button?'
+      }
+    },
     navbar: {
       'example': {
         sidebar_example: 'For sidebar example see ',

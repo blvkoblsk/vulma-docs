@@ -7,6 +7,7 @@ const docs = [
   { component: 'drawer', demos: 1 },
   { component: 'input', demos: 1 },
   { component: 'menu', demos: 1 },
+  { component: 'modal', demos: 1 },
   { component: 'navbar', demos: 1 },
   { component: 'panel', demos: 1 },
   { component: 'radio', demos: 1 },
