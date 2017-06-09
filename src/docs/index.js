@@ -8,6 +8,7 @@ const docs = [
   { component: 'input', demos: 1 },
   { component: 'menu', demos: 1 },
   { component: 'navbar', demos: 1 },
+  { component: 'panel', demos: 1 },
   { component: 'radio', demos: 1 },
   { component: 'select', demos: 1 },
   { component: 'tabs', demos: 1 }

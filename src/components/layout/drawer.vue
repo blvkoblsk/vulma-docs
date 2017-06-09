@@ -17,7 +17,7 @@
       vulma-menugroup(:title="$t('containers')")
         vulma-menuitem(route='/docs/collapsible') Collapsible
         vulma-menuitem(route='/docs/dialog') Dialog (todo)
-        vulma-menuitem(route='/docs/panel') Panel (todo)
+        vulma-menuitem(route='/docs/panel') Panel
         vulma-menuitem(route='/docs/tabs') Tabs
       vulma-menugroup(:title="$t('forms')")
         vulma-menuitem(route='/docs/checkbox') Checkbox
