@@ -21,7 +21,8 @@ export default {
             { name: 'min', type: 'Date', default: this.$t('docs.datepicker.props.max.default'), description: this.$t('docs.datepicker.props.max.description') },
             { name: 'auto-select-today', type: 'Boolean', default: 'true', description: this.$t('docs.datepicker.props.auto-select-today') },
             { name: 'show-close-button', type: 'Boolean', default: 'true', description: this.$t('docs.datepicker.props.show-close-button') },
-            { name: 'i18n', type: 'Object', default: '', description: this.$t('docs.datepicker.props.i18n') }
+            { name: 'i18n', type: 'Object', default: '', description: this.$t('docs.datepicker.props.i18n') },
+            { name: 'size', type: 'String', default: '', description: this.$t('bulma_size') }
           ]
         }
       ]
