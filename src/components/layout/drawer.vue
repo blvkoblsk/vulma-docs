@@ -29,7 +29,7 @@
         vulma-menuitem(route='/docs/select') Select
       vulma-menugroup(:title="$t('data')")
         vulma-menuitem(route='/docs/chart') Chart (todo)
-        vulma-menuitem(route='/docs/datatable') Datatable (todo)
+        vulma-menuitem(route='/docs/datatable') Datatable
 </template>
 
 <script>
