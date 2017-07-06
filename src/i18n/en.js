@@ -158,6 +158,14 @@ export default {
         }
       }
     },
+    highlight: {
+      props: {
+        'text': 'Text where term will be highlighted.',
+        'term': 'Term to highlight in text.',
+        'ignore-case': 'Should ignore character case? If true, then "A" will be equal to "a".',
+        'ignore-accents': 'Should ignore special characters? If true, then "ç" will be equal to "c" and "á" will be equal to "a".'
+      }
+    },
     input: {
       props: {
         'type': 'One of the html input types.',

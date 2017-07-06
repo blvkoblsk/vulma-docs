@@ -6,6 +6,7 @@ const docs = [
   { component: 'datatable', demos: 1 },
   { component: 'datepicker', demos: 1 },
   { component: 'drawer', demos: 1 },
+  { component: 'highlight', demos: 1 },
   { component: 'input', demos: 1 },
   { component: 'menu', demos: 1 },
   { component: 'modal', demos: 1 },

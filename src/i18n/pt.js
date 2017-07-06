@@ -158,6 +158,14 @@ export default {
         }
       }
     },
+    highlight: {
+      props: {
+        'text': 'Texto onde o termo será destacado.',
+        'term': 'Termo para destacar no texto.',
+        'ignore-case': 'Deve ignorar maísculas e minúsculas? Se true, então "A" será igual a "a".',
+        'ignore-accents': 'Deve ignorar caracteres especiais? Se true, então "ç" será igual a "c" e "á" será igual a "a".'
+      }
+    },
     input: {
       props: {
         'type': 'Um dos tipos de input do html.',

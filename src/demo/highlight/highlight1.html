@@ -1,0 +1,7 @@
+<section class='section'>
+  <vulma-input label='Term' v-model='term'></vulma-input>
+  <vulma-input label='Text' v-model='text'></vulma-input>
+  <vulma-checkbox v-model='ignoreCase'>Ignore Case</vulma-checkbox>
+  <vulma-checkbox v-model='ignoreAccents'>Ignore Special Characters</vulma-checkbox>
+  <vulma-highlight :text='text' :term='term' :ignore-case='ignoreCase' :ignore-accents='ignoreAccents'></vulma-highlight>
+</section>

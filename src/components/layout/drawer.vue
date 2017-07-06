@@ -10,6 +10,7 @@
       vulma-menugroup(:title="$t('basic')")
         vulma-menuitem(route='/docs/avatar') Avatar
         vulma-menuitem(route='/docs/button') Button
+        vulma-menuitem(route='/docs/highlight') Highlight
       vulma-menugroup(:title="$t('layout')")
         vulma-menuitem(route='/docs/drawer') Drawer
         vulma-menuitem(route='/docs/menu') Menu
