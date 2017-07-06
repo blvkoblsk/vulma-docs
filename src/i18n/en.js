@@ -16,8 +16,10 @@ export default {
   group_property: 'Property used to group rows. Ex: "profile.brand".',
   guide: 'Guide',
   href: 'Url used to redirect.',
+  i18n: 'Localized messages.',
   icon_class: 'Icon class (if using font-awesome, dont need "fa" class, just use "fa-github").',
   layout: 'Layout',
+  locale: 'Locale (ISO 639-1) and region (ISO 3166-1) codes. Ex: en, pt, en-US, pt-BR.',
   methods: 'Methods',
   name: 'Name',
   open_new_tab: 'Open specified route in a new tab.',
@@ -83,9 +85,45 @@ export default {
         }
       }
     },
+    datatable: {
+      props: {
+        'columns': 'Columns array to display.',
+        'columns_prop': 'Column property. Ex: "profile.name".',
+        'columns_type': 'Column type. @:possible_values String, Boolean, Number, Date.',
+        'columns_decimals': 'Column decimal places (can be used when columns.type = Number).',
+        'columns_wrapper': 'Wrapper function useful for unit conversion. Ex: miles => miles * 1.60934 (converting to km).',
+        'columns_label': 'Column label. When not specified will use column property name.',
+        'columns_fixedLeft': 'Should column be fixed left?',
+        'columns_fixedRight': 'Should column be fixed right?',
+        'columns_textAlign': 'Default value depends on column type (String: "left", Boolean/Date: "center", Number: "right").',
+        'columns_sort': 'Can column be sorted?',
+        'columns_defaultSort': 'Should column be sorted by default?',
+        'columns_filter': 'Can column be filtered?',
+        'columns_group': 'As rows can be grouped by multiple columns, specify a number (1-based) as group order.',
+        'columns_slot': 'Slot name to use in custom template. When not specified, will use column property name. Ex: <template slot="profile.image" scope="prop">{{prop.data}}</template>.',
+        'columns-selector': 'Allow user to select which columns are visible?',
+        'condensed': 'Should table be condensed?',
+        'groups-expanded': 'Should groups be initially expanded?',
+        'hide-group-columns': 'Should hide columns used in groups?',
+        'sort': 'Enable sorting by default in all columns?',
+        'search': 'Show search box?',
+        'filter': 'Enable filtering by default in all columns?',
+        'pagination': 'Pagination options.',
+        'pagination_enabled': 'Should pagination be enabled?',
+        'pagination_pageSize': 'Initial page size.',
+        'pagination_pageSizes': 'Page size options available to user.',
+        'pagination_canShowAll': 'Does page size options have a "Show All" option?',
+        'excel': 'Allow user export table to Excel?'
+      },
+      events: {
+        'row-click': {
+          trigger: 'Row was clicked.',
+          return_description: 'row object'
+        }
+      }
+    },
     datepicker: {
       props: {
-        'locale': 'Locale (ISO 639-1) and region (ISO 3166-1) codes. Ex: en, pt, en-US, pt-BR.',
         'first-day-of-week': 'Day of week to show in the first calendar column (0 is Sunday).',
         'highlight-weekend': 'Should hightlight weekend days?',
         'min': {
@@ -186,7 +224,7 @@ export default {
         events: {
           'tab-selected': {
             trigger: 'One of the tabs was selected',
-            return_description: 'Tab index (zero based)'
+            return_description: 'Tab index (zero-based)'
           }
         }
       }

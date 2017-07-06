@@ -16,8 +16,10 @@ export default {
   group_property: 'Propriedade usada para agrupar os registros. Ex: "perfil.marca".',
   guide: 'Guia',
   href: 'Url usada para redirecionar.',
+  i18n: 'Mensagens localizadas.',
   icon_class: 'Classe do ícone (se estiver usando font-awesome, a classe "fa" não é necessária, use apenas "fa-github").',
   layout: 'Layout',
+  locale: 'Códigos da localização (ISO 639-1) e região (ISO 3166-1). Ex: en, pt, en-US, pt-BR.',
   methods: 'Métodos',
   name: 'Nome',
   open_new_tab: 'Abre a rota especificada numa aba nova.',
@@ -83,9 +85,45 @@ export default {
         }
       }
     },
+    datatable: {
+      props: {
+        'columns': 'Vetor de colunas para mostrar.',
+        'columns_prop': 'Propriedade da coluna. Ex: "perfil.nome".',
+        'columns_type': 'Tipo da coluna. @:possible_values String, Boolean, Number, Date.',
+        'columns_decimals': 'Casas decimais da coluna (pode ser usado quando columns.type = Number).',
+        'columns_wrapper': 'Função wrapper útil para conversão de unidades. Ex: milhas => milhas * 1.60934 (convertendo para km).',
+        'columns_label': 'Label da coluna. Quando não especificada usará o nome da propriedade da coluna.',
+        'columns_fixedLeft': 'A coluna deve ser fixada à esquerda?',
+        'columns_fixedRight': 'A coluna deve ser fixada à direita?',
+        'columns_textAlign': 'O valor padrão depende do tipo da coluna (String: "left", Boolean/Date: "center", Number: "right").',
+        'columns_sort': 'A coluna pode ser ordenada?',
+        'columns_defaultSort': 'A coluna deve ser ordenada por padrão?',
+        'columns_filter': 'A coluna pode ser filtrada?',
+        'columns_group': 'Como as linhas podem ser agrupadas por múltiplas colunas, especifique um número (base 1) como ordem do grupo.',
+        'columns_slot': 'Nome do slot para usar no template customizado. Quando não especificado, usará o nome da propriedade da coluna. Ex: <template slot="perfil.imagem" scope="prop">{{prop.data}}</template>.',
+        'columns-selector': 'Permitir ao usuário selecionar quais colunas estão visíveis?',
+        'condensed': 'A tabela deve ser condensada?',
+        'groups-expanded': 'Os grupos devem ser expandidos inicialmente?',
+        'hide-group-columns': 'As colunas usadas nos grupos devem ser ocultas?',
+        'sort': 'Habilitar ordenação por padrão em todas colunas?',
+        'search': 'Mostrar caixa de pesquisa?',
+        'filter': 'Habilitar filtro por padrão em todas colunas?',
+        'pagination': 'Opções de paginação.',
+        'pagination_enabled': 'A paginação deve ser habilitada?',
+        'pagination_pageSize': 'Tamanho de página inicial.',
+        'pagination_pageSizes': 'Opções de tamanho de página disponíveis para o usuário.',
+        'pagination_canShowAll': 'As opções de tamanho de página devem tem uma opção "Mostrar Todos"?',
+        'excel': 'Permitir ao usuário exportar a tabela para Excel?'
+      },
+      events: {
+        'row-click': {
+          trigger: 'Uma linha foi clicada.',
+          return_description: 'objeto da linha'
+        }
+      }
+    },
     datepicker: {
       props: {
-        'locale': 'Códigos da localização (ISO 639-1) e região (ISO 3166-1). Ex: en, pt, en-US, pt-BR.',
         'first-day-of-week': 'Dia da semana para mostrar na primeira coluna do calendário (0 é Domingo).',
         'highlight-weekend': 'Os dias de fim de semana devem ser destacados?',
         'min': {

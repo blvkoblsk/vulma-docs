@@ -3,6 +3,7 @@ const docs = [
   { component: 'button', demos: 1 },
   { component: 'checkbox', demos: 1 },
   { component: 'collapsible', demos: 1 },
+  { component: 'datatable', demos: 1 },
   { component: 'datepicker', demos: 1 },
   { component: 'drawer', demos: 1 },
   { component: 'input', demos: 1 },

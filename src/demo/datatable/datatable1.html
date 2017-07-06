@@ -1,0 +1,21 @@
+<div class="table-container">
+  <vulma-datatable :src='heroes' :columns='columns' condensed='true' columns-selector sort='true' search='true' filter='true'
+    groups-expanded='true' locale='pt-BR' :page-size='5' :pagination='pagination' excel='true' :i18n='i18n'>
+    <template slot='id' scope='prop'>
+      <strong>{{prop.data}}</strong>
+    </template>
+    <template slot='profile.image' scope='prop'>
+      <div class="image is-48x48">
+        <img :src='prop.data'>
+      </div>
+    </template>
+    <template slot='site' scope='prop'>
+      <a :href='prop.data' target='_blank'>site</a>
+    </template>
+    <template slot='buttons' scope='prop'>
+      <vulma-button size='small' color='primary' @click='doSomething(prop.data)'>
+        click me
+      </vulma-button>
+    </template>
+  </vulma-datatable>
+</div>

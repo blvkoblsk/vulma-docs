@@ -13,7 +13,7 @@ export default {
           name: 'vulma-datepicker',
           props: [
             { name: 'label', type: 'String', default: '', description: this.$t('field_label') },
-            { name: 'locale', type: 'String', default: this.$t('browser_language'), description: this.$t('docs.datepicker.props.locale') },
+            { name: 'locale', type: 'String', default: this.$t('browser_language'), description: this.$t('locale') },
             { name: 'first-day-of-week', type: 'Number', default: '0', description: this.$t('docs.datepicker.props.first-day-of-week') },
             { name: 'highlight-weekend', type: 'Boolean', default: 'true', description: this.$t('docs.datepicker.props.highlight-weekend') },
             { name: 'color', type: 'String', default: '"primary"', description: this.$t('bulma_color') },
